@@ -64,7 +64,10 @@ const mia = pager.callbackMaker(miahtml);
 
 const era = pager.callbackMaker(erahtml);
 
-function blog() {}
+function blog() {
+  const res = fetch("/blogs");
+  console.log(res);
+}
 
 page("/", index);
 page("/giacomo", giacomo);
