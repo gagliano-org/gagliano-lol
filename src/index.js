@@ -4,10 +4,11 @@
 console.log("gagliano kick asses");
 console.log("bumbalacaca");
 
+import { Pager } from "@zaionstate/ui";
 import { mdToHtmlString } from "./mdToHtmlString";
 import page from "page";
 
-const parser = new DOMParser();
+const pager = new Pager({ parser: new DOMParser() });
 
 const indexhtml = `
 <div id="container">
@@ -51,49 +52,18 @@ const miahtml = ``;
 
 const erahtml = ``;
 
-const deleteContent = async content => {
-  if (content.firstChild) {
-    while (content.firstChild) {
-      content.removeChild(content.firstChild);
-    }
-  }
-};
+const index = pager.callbackMaker(indexhtml);
 
-const stringToJsHtml = (string, parser) => {
-  const element = parser.parseFromString(string, "text/html");
-  return element.body.childNodes;
-};
-const attach = (element, nodes) => {
-  nodes.forEach(n => element.appendChild(n));
-};
+const giacomo = pager.callbackMaker(giacomohtml);
 
-const setup = parser => (page, htmlstring) => {
-  console.log(page);
-  const content = document.getElementById("content");
-  deleteContent(content);
-  const nodes = stringToJsHtml(htmlstring, parser);
-  attach(content, nodes);
-};
-const setupper = setup(parser);
+const ari = pager.callbackMaker(arihtml);
 
-function index() {
-  setupper("index", indexhtml);
-}
-function giacomo() {
-  setupper("giacomo", giacomohtml);
-}
-function ari() {
-  setupper("arianna", arihtml);
-}
-function noa() {
-  setupper("noa", noahtml);
-}
-function mia() {
-  setupper("mia", miahtml);
-}
-function era() {
-  setupper("era", erahtml);
-}
+const noa = pager.callbackMaker(noahtml);
+
+const mia = pager.callbackMaker(miahtml);
+
+const era = pager.callbackMaker(erahtml);
+
 function blog() {}
 
 page("/", index);
