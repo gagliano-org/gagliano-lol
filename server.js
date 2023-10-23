@@ -1,84 +1,14 @@
 // https://bun.sh/guides/read-file/string
 
-import { readdirSync } from "fs";
-import { frontMatterInMdToJSObject } from "@zaionstate/server";
+import { handleStyleCss } from "./src/handlers/handleStyleCss";
+import { handleIndexJs } from "./src/handlers/handleIndexJs";
+import { handleAssets } from "./src/handlers/handleAssets";
+import { handleBlogs } from "./src/handlers/handleBlogs";
+import { handleParseMd } from "./src/handlers/handleParseMd";
+import { fallback } from "./src/handlers/fallback";
 
 console.log(process.env.DEV);
 // string
-
-const handleStyleCss = async () => {
-  const css = await Bun.file("./assets/style.css").text();
-  const headers = {
-    "Content-Type": "text/css", // Imposta il tipo di contenuto a HTML
-  };
-  return new Response(css, { headers });
-};
-
-const handleIndexJs = async () => {
-  const js = await Bun.file("./dist/index.js").text();
-  const headers = {
-    "Content-Type": "application/javascript", // Imposta il tipo di contenuto a HTML
-  };
-  return new Response(js, { headers });
-};
-
-const handleAssets = async (url) => {
-  const filename = url.pathname.replace("/assets/", "");
-  const md = await Bun.file(`./assets/${filename}`).text();
-  const headers = {
-    "Content-Type": "text/markdown", // Imposta il tipo di contenuto a HTML
-  };
-  return new Response(md, { headers });
-};
-
-const handleBlogs = () => {
-  const files = readdirSync("./assets/").map((e) => e.replace(".md", ""));
-  const headers = {
-    "Content-Type": "application/json", // Imposta il tipo di contenuto a HTML
-  };
-  return new Response(JSON.stringify(files), { headers });
-};
-
-const handleParseMd = () => {
-  return new Response("I will send you the parsed md");
-};
-
-const fallback = (url, text) => {
-  // subdomains
-  const logcall = (path) => console.log(`got a call for ${path}`);
-  async function handleGiacomo(url) {
-    logcall(url.hostname);
-    const file = Bun.file("./src/giacomo.html");
-    const html = await file.text();
-    console.log(html);
-    const headers = {
-      "Content-Type": "text/html", // Imposta il tipo di contenuto a HTML
-    };
-    return new Response(html, { headers });
-  }
-  function handleArianna(url) {
-    logcall(url.hostname);
-  }
-  function handleNoa(url) {
-    logcall(url.hostname);
-  }
-  function handleMia(url) {
-    logcall(url.hostname);
-  }
-  function handleEra(url) {
-    logcall(url.hostname);
-  }
-  if (url.hostname.includes("giacomo")) return handleGiacomo(url);
-  if (url.hostname.includes("arianna")) return handleArianna(url);
-  if (url.hostname.includes("noa")) return handleNoa(url);
-  if (url.hostname.includes("mia")) return handleMia(url);
-  if (url.hostname.includes("era")) return handleEra(url);
-
-  const headers = {
-    "Content-Type": "text/html", // Imposta il tipo di contenuto a HTML
-  };
-  return new Response(text, { headers });
-};
 
 const server = Bun.serve({
   port: process.env.DEV,
