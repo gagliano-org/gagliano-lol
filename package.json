@@ -12,6 +12,7 @@
   },
   "dependencies": {
     "@zaionstate/ui": "workspace:*",
+    "@zaionstate/server": "workspace:*",
     "page": "^1.11.6",
     "rehype-sanitize": "^6.0.0",
     "rehype-stringify": "^10.0.0",
