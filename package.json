@@ -8,8 +8,7 @@
   "scripts": {
     "dev": "bun build ./src/index.js --outdir ./dist --target browser --watch",
     "server:dev": "bun --hot server.js",
-    "build": "bun build ./src/index.js --outdir ./dist --target browser",
-    "run": "bun --hot server.js"
+    "build": "bun build ./src/index.js --outdir ./dist --target browser"
   },
   "dependencies": {
     "@zaionstate/ui": "workspace:*",
