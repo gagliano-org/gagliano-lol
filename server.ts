@@ -9,12 +9,12 @@ import { fallback } from "./src/handlers/fallback";
 
 console.log(process.env.DEV);
 // string
-const getHtml = async (path) => {
+const getHtml = async (path: string) => {
   const file = Bun.file(path);
   return await file.text();
 };
 
-const handleMain = async (path = "./index.html") => {
+const handleMain = async (url: URL, path = "./index.html") => {
   const html = await getHtml(path);
   if (url.pathname === "/assets/style.css") return await handleStyleCss();
   else if (url.pathname === "/build/index.js") return await handleIndexJs();
@@ -27,7 +27,7 @@ const handleMain = async (path = "./index.html") => {
   else return fallback(url, html);
 };
 
-const handleSpesa = async (path = "./spesa.html") => {
+const handleSpesa = async (url: URL, path = "./spesa.html") => {
   const html = await getHtml(path);
   if (url.pathname === "/assets/style.css") return await handleStyleCss();
   else if (url.pathname === "/build/index.js")
@@ -39,13 +39,14 @@ const handleSpesa = async (path = "./spesa.html") => {
   else return fallback(url, html);
 };
 
+// @ts-expect-error
 const server = Bun.serve({
   port: process.env.DEV,
   async fetch(req) {
     const url = new URL(req.url);
     const hostname = url.hostname;
-    if (hostname.includes("spesa.")) handleSpesa();
-    else handleMain();
+    if (hostname.includes("spesa.")) return handleSpesa(url);
+    else return handleMain(url);
   },
 });
 
