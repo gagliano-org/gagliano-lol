@@ -7,14 +7,27 @@ body {
   background-color: hsl(170, 32%, 10%);
   color: hsl(350, 3%, 98%);
 }
+
 h1,
 h3,
 p {
   margin: 0;
 }
+
 h1 {
   font-size: 7rem;
 }
+
+h1,
+h3,
+p {
+  margin: 0;
+}
+
+h1 {
+  font-size: 7rem;
+}
+
 #container {
   width: 100vw;
   height: 100vh;
@@ -23,16 +36,20 @@ h1 {
   flex-direction: column;
   place-content: center;
   text-align: center;
+
   > a {
     text-decoration: none;
     color: hsl(349, 11%, 89%);
     width: max-content;
+
     &:hover {
       color: hsl(349, 100%, 50%);
     }
+
     place-self: center;
   }
 }
+
 #footer {
   display: flex;
   place-content: end;
@@ -41,8 +58,45 @@ h1 {
   width: 100%;
   padding: 1rem;
   box-sizing: border-box;
+
   > a {
     margin-right: 1rem;
     text-decoration: none;
   }
+}
+
+.flex {
+  display: flex;
+}
+
+.fd_column {
+  flex-direction: column;
+}
+
+.pc_c {
+  place-content: center;
+}
+
+.ta_c {
+  text-align: center;
+}
+
+.w_100vw {
+  width: 100vw;
+}
+
+.w_maxc {
+  width: max-content;
+}
+
+.h_100vh {
+  height: 100vh;
+}
+
+.ps_c {
+  place-self: center;
+}
+
+.p_1rem {
+  padding: 1rem;
 }

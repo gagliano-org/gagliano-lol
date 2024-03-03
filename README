@@ -12,3 +12,13 @@ Al momento il progetto è essenzialmente diviso in tre parti:
 - blog personale di Giacomo: luogo dove Giacomo pubblica i suoi blog, ovvero i documenti che crea durante le sue ricerche e sperimentazioni, un po come un libretto per gli appunti.
 - blog personale di Arianna: come sopra =)
 - nostro mercarino: il mercatino delle cose usate che abbiamo da vendere, noi ed i nostri amici!
+
+# Da Fare
+
+[ ] riscrivere file in typescript
+[ ] creare una cartella per i file server
+
+[ ] importare applicazione spesa
+
+- [ ] creare subdominio
+- [ ] creare whitelist di indirizzi per accedere a menu con applicazioni
