@@ -34,6 +34,3 @@ Nel caso in cui per sbaglio si abbia creato un `git` repo nel pacchetto prima di
 - [ ] aggiungere un `remote` al `git` repo dell'`app` o `package` con `git remote add <nome-remote> <url>`
 - [ ] effettuare `fetch` dal remoto
 - [ ] a questo punto si può effettuare il commit dei cambiamenti anche nel `monorepo`
-
-
-`ssh://ubuntu@192.168.1.254:42/home/ubuntu/remotes/local/zaion.network.git`
