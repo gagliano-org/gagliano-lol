@@ -1,0 +1,21 @@
+{
+	"nodes":[
+		{"id":"240e2c8de1477cb2","x":-240,"y":-880,"width":560,"height":760,"type":"group","label":"server"},
+		{"id":"7dbd3d62dc2c7e28","x":-200,"y":-760,"width":460,"height":280,"type":"group","label":"auth"},
+		{"id":"356c4353bba229a0","x":-200,"y":-360,"width":370,"height":160,"type":"group","label":"wrapper"},
+		{"id":"e52eb49e90f323fc","x":1480,"y":-1120,"width":290,"height":200,"type":"group","label":"browser"},
+		{"id":"6c17364b73a37f3a","type":"text","text":"![[stirfry wrapper]]","x":-800,"y":80,"width":910,"height":1480},
+		{"id":"c1ba4aee8133d88b","x":320,"y":360,"width":870,"height":952,"type":"text","text":"![[proxy server per relay gundb]]"},
+		{"id":"9167d79d14e3d97c","type":"text","text":"stirfry","x":-180,"y":-340,"width":250,"height":60},
+		{"id":"bfca2de44a0a92f6","x":-100,"y":-720,"width":250,"height":60,"type":"text","text":"proxy"},
+		{"id":"8e0921d5db2785e3","x":-100,"y":-580,"width":250,"height":60,"type":"text","text":"gundb"},
+		{"id":"acd81e059bd632ab","x":1500,"y":-1100,"width":250,"height":60,"type":"text","text":"gundb private"},
+		{"id":"27967e41be4aacd7","type":"text","text":"gundb shared","x":1500,"y":-1000,"width":250,"height":60},
+		{"id":"0e5397cb76b9218e","x":680,"y":-464,"width":250,"height":60,"type":"text","text":"api"},
+		{"id":"bd467df4a9c0e0f6","x":680,"y":-310,"width":250,"height":60,"type":"text","text":"cli"}
+	],
+	"edges":[
+		{"id":"68554cabb0723c93","fromNode":"240e2c8de1477cb2","fromSide":"right","toNode":"0e5397cb76b9218e","toSide":"left"},
+		{"id":"c92c456d349f062d","fromNode":"240e2c8de1477cb2","fromSide":"right","toNode":"bd467df4a9c0e0f6","toSide":"left"}
+	]
+}

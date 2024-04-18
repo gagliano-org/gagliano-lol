@@ -1,0 +1,13 @@
+{
+	"nodes":[
+		{"id":"95a10135cc89e4ca","type":"group","x":-342,"y":-373,"width":862,"height":633,"label":"Mouse"},
+		{"id":"951acb2db6c572f9","type":"text","text":"right click","x":80,"y":-320,"width":250,"height":60},
+		{"id":"e8913fe1def16e94","type":"text","text":"left click","x":-320,"y":-320,"width":250,"height":60},
+		{"id":"8ef51d18ef15f93c","type":"text","text":"mouse down","x":-320,"y":-180,"width":250,"height":60,"color":"6"},
+		{"id":"29a0ba82d3e1d6a8","type":"text","text":"mouse down","x":80,"y":-180,"width":250,"height":60,"color":"6"},
+		{"id":"91c20fa4147e0a40","type":"text","text":"context menu","x":80,"y":-80,"width":250,"height":60,"color":"6"},
+		{"id":"5538abb005fa87ab","type":"text","text":"click","x":-320,"y":120,"width":250,"height":60,"color":"6"},
+		{"id":"f6af7727f915485a","type":"text","text":"mouse up","x":-320,"y":20,"width":250,"height":60,"color":"6"}
+	],
+	"edges":[]
+}

@@ -1,0 +1,20 @@
+{
+	"nodes":[
+		{"id":"eb58d6a9fcc1610d","type":"text","text":"stiva","x":149,"y":30,"width":250,"height":60},
+		{"id":"d35272445d8f9495","type":"text","text":"fisico","x":149,"y":-320,"width":250,"height":60},
+		{"id":"bd325ce3411a1969","type":"text","text":"rullo per portare bagagli","x":149,"y":-140,"width":250,"height":60},
+		{"id":"44141e9dc5ce62a2","type":"text","text":"aereo","x":-240,"y":210,"width":250,"height":60},
+		{"id":"5f416cbf6437cf64","type":"text","text":"cabina","x":540,"y":210,"width":250,"height":60},
+		{"id":"31dadb8fa060e9c4","type":"text","text":"check in","x":149,"y":-640,"width":250,"height":60},
+		{"id":"5a035cfac7050e1b","type":"text","text":"online","x":540,"y":-320,"width":250,"height":60}
+	],
+	"edges":[
+		{"id":"73539a9bed9bbf0e","fromNode":"44141e9dc5ce62a2","fromSide":"right","toNode":"eb58d6a9fcc1610d","toSide":"left"},
+		{"id":"b701249af73cd617","fromNode":"44141e9dc5ce62a2","fromSide":"right","toNode":"5f416cbf6437cf64","toSide":"left"},
+		{"id":"92b7915ead9dab02","fromNode":"31dadb8fa060e9c4","fromSide":"bottom","toNode":"d35272445d8f9495","toSide":"top"},
+		{"id":"6604c1bcdb09a8fd","fromNode":"31dadb8fa060e9c4","fromSide":"bottom","toNode":"5a035cfac7050e1b","toSide":"top"},
+		{"id":"320954268f30b8fa","fromNode":"d35272445d8f9495","fromSide":"bottom","toNode":"bd325ce3411a1969","toSide":"top","label":"bagagli"},
+		{"id":"355e61564873b119","fromNode":"bd325ce3411a1969","fromSide":"bottom","toNode":"eb58d6a9fcc1610d","toSide":"top","label":"bagagli"},
+		{"id":"4b7d71ff0cd5d88d","fromNode":"5a035cfac7050e1b","fromSide":"bottom","toNode":"5f416cbf6437cf64","toSide":"top"}
+	]
+}

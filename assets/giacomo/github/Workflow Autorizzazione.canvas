@@ -1,0 +1,21 @@
+{
+	"nodes":[
+		{"id":"2cf2f953eda5f0f4","type":"text","text":"macchina1","x":-472,"y":-416,"width":250,"height":60},
+		{"id":"645debb1f78f3cbc","type":"text","text":"ssh","x":-80,"y":-416,"width":250,"height":60},
+		{"id":"db75d59828462045","type":"text","text":"macchina2","x":-472,"y":-300,"width":250,"height":60},
+		{"id":"e5464c2ab78c489b","type":"text","text":"ssh","x":-80,"y":-300,"width":250,"height":60},
+		{"id":"0cea760ddcf878bf","type":"text","text":"user system","x":-722,"y":-730,"width":250,"height":60},
+		{"id":"df8c6efbb0698eb8","type":"text","text":"ssh keys","x":200,"y":-730,"width":250,"height":60},
+		{"id":"4b8c6af945f7791c","type":"text","text":"user github","x":-280,"y":-820,"width":250,"height":60}
+	],
+	"edges":[
+		{"id":"1de933b2e878a089","fromNode":"2cf2f953eda5f0f4","fromSide":"right","toNode":"645debb1f78f3cbc","toSide":"left"},
+		{"id":"4cef49ddbdb16f87","fromNode":"db75d59828462045","fromSide":"right","toNode":"e5464c2ab78c489b","toSide":"left"},
+		{"id":"c97687cddffe9307","fromNode":"0cea760ddcf878bf","fromSide":"bottom","toNode":"2cf2f953eda5f0f4","toSide":"left"},
+		{"id":"ac4dd71241576bec","fromNode":"0cea760ddcf878bf","fromSide":"bottom","toNode":"db75d59828462045","toSide":"left"},
+		{"id":"04885a46ec294f89","fromNode":"0cea760ddcf878bf","fromSide":"right","toNode":"4b8c6af945f7791c","toSide":"left"},
+		{"id":"2e199dfa1b1c8d5d","fromNode":"4b8c6af945f7791c","fromSide":"right","toNode":"df8c6efbb0698eb8","toSide":"left"},
+		{"id":"cd56771bd8cec0c1","fromNode":"645debb1f78f3cbc","fromSide":"right","toNode":"df8c6efbb0698eb8","toSide":"bottom"},
+		{"id":"9d75d5c41f877ce1","fromNode":"e5464c2ab78c489b","fromSide":"right","toNode":"df8c6efbb0698eb8","toSide":"bottom"}
+	]
+}

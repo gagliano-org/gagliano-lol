@@ -1,0 +1,27 @@
+{
+	"nodes":[
+		{"id":"274c034833fa39c3","type":"group","x":-280,"y":-410,"width":752,"height":1070,"label":"Keywords"},
+		{"id":"411ff36a201fb93a","type":"text","text":"```js\n// Dichiarazione variabili\nvar\nlet\nconst\nfunction\nclass\n```","x":-260,"y":-390,"width":332,"height":191},
+		{"id":"276db3bcb498b755","type":"text","text":"```js\n// Controllo di flusso\nif\nelse\nswitch\ncase\ndefault\nbreak\ncontinue\n```","x":-260,"y":-160,"width":332,"height":240},
+		{"id":"4e0f9f41a303820c","type":"text","text":"```js\n// Cicli e iterazioni\nfor\nwhile\ndo\nfor...of\nfor...in\n```","x":-260,"y":120,"width":332,"height":240},
+		{"id":"37f86d266b2c2979","type":"text","text":"```ts\ntype GFunction<A,R> = (...args:A) => R\ntype PureFunction=GFunction<any,any>\ntype SideEffect=GFunction<any,void>\ntype Callback=GFunction<any,any>\ntype Emitter=GFunction<[string,Callback],void>\ntype HOF=GFunction<any,GFuncion<any,any>>\n```","x":-1800,"y":-320,"width":531,"height":205},
+		{"id":"4767418234d35c50","type":"text","text":"Pure Function\n```js\nconst purefunction = (a) => a+1\n```","x":-1180,"y":-320,"width":371,"height":114},
+		{"id":"b92b1129b7a90816","type":"text","text":"Side Effect\n```js\nlet cambiabile\nconst purefunction = (a) => cambiabile = a\n```","x":-1180,"y":-172,"width":460,"height":152},
+		{"id":"171b28dc470ff96f","type":"text","text":"Callback\n```js\nconst callback = (valoreCheVerrà) => {\n\t// fare qualcosa al valore\n\tvaloreCheVerrà\n}\n\nemitter(\"evento\",callback)\nsome.iterator(callback)\nsomeArray.map((e,i,array)=>{\n\t// fai qualche cosa ad ogni array\n})\n\n```","x":-1180,"y":20,"width":440,"height":340},
+		{"id":"687b6aadf830e67f","type":"text","text":"HOF (High Order Function) `simile ad una classe`\n```js\nconst hof = (avalue) => {\n\t// fare qualcosa al valore\n\treturn ()=>{\n\t\t// useremo qui il valore che arriva\n\t\tavalue\n\t}\n}\n\nconst funzioneConfigurata = hof(10)\nfunzioneConfigurata(\"gli passi il valore\")\n```","x":-1180,"y":400,"width":620,"height":340},
+		{"id":"04cdcdd159b9950b","type":"text","text":"```js\nconst a = false\nconst b = true\n\nconst isAbool = a instanceof Boolean // ritorna true\nconst isAString = typeof a === \"string\nconst isANull = a === null\n\nconst condizione = a === true ? 0 : \nif(\"unachiave\" in unoggetto) {}\n\n```","x":-1020,"y":891,"width":600,"height":269},
+		{"id":"05bfb8569de3158b","type":"text","text":"```js\n// Gestione delle eccezioni\nfor\nwhile\ndo\nfor...of\nfor...in\n```","x":120,"y":-390,"width":332,"height":191},
+		{"id":"493a3dfea897072d","type":"text","text":"```js\n// Operazioni logiche e confronti\ntrue\nfalse\nnull\nundefined\ntypeof\ninstanceof\n```","x":120,"y":-160,"width":332,"height":240},
+		{"id":"8728394494274f48","type":"text","text":"```js\n// Gestione degli oggetti e proprietà\nthis\nnew\ndelete\nin\nwith\nsuper\n```","x":120,"y":120,"width":332,"height":240},
+		{"id":"916af98d2e541ae2","type":"text","text":"```js\n// Altre parole chiave\nreturn\nyield\nawait\nimport\nexport\n```","x":-260,"y":400,"width":332,"height":240},
+		{"id":"eb605db13d9ef377","type":"text","text":"node","x":-2892,"y":690,"width":250,"height":60},
+		{"id":"047eb72545f7d4a6","type":"text","text":"child_process","x":-2520,"y":690,"width":250,"height":60},
+		{"id":"5723cfd73ec2b022","type":"text","text":"[[execFileSync]]","x":-2142,"y":689,"width":250,"height":60},
+		{"id":"01580e0dc3a050cc","x":-2142,"y":800,"width":250,"height":60,"type":"text","text":"[[execSync]]"}
+	],
+	"edges":[
+		{"id":"3fc067532a59b36f","fromNode":"eb605db13d9ef377","fromSide":"right","toNode":"047eb72545f7d4a6","toSide":"left"},
+		{"id":"3831348099b38c7f","fromNode":"047eb72545f7d4a6","fromSide":"right","toNode":"5723cfd73ec2b022","toSide":"left"},
+		{"id":"756949a3940a2dcc","fromNode":"047eb72545f7d4a6","fromSide":"right","toNode":"01580e0dc3a050cc","toSide":"left"}
+	]
+}

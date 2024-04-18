@@ -1,0 +1,16 @@
+{
+	"nodes":[
+		{"id":"c11e8cac32962209","type":"text","text":"interview preliminare","x":-163,"y":-396,"width":250,"height":60},
+		{"id":"3f07f3b917ccb329","type":"text","text":"presentazione grafo","x":-1,"y":-246,"width":250,"height":60},
+		{"id":"731fad8826bf4ee0","type":"text","text":"nozioni base","x":-1,"y":-160,"width":250,"height":60},
+		{"id":"76d544a092c51ca9","type":"text","text":"analisi capacità","x":-1,"y":-80,"width":250,"height":60},
+		{"id":"54440dd41828930c","x":124,"y":40,"width":250,"height":60,"type":"text","text":"questionario"},
+		{"id":"bac659081ae6b6d1","x":-96,"y":229,"width":250,"height":131,"type":"text","text":"in base alle necessità, lo studente seleziona una tematica nel grafo e si approfondisce quella"}
+	],
+	"edges":[
+		{"id":"21068fad48b6b608","fromNode":"c11e8cac32962209","fromSide":"bottom","toNode":"3f07f3b917ccb329","toSide":"top"},
+		{"id":"a4a5f4145975df22","fromNode":"c11e8cac32962209","fromSide":"bottom","toNode":"731fad8826bf4ee0","toSide":"top"},
+		{"id":"e5353f557ac5f844","fromNode":"c11e8cac32962209","fromSide":"bottom","toNode":"76d544a092c51ca9","toSide":"top"},
+		{"id":"6b32d7c42c2daedb","fromNode":"76d544a092c51ca9","fromSide":"bottom","toNode":"54440dd41828930c","toSide":"top"}
+	]
+}

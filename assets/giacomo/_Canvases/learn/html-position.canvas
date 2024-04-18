@@ -1,0 +1,9 @@
+{
+	"nodes":[
+		{"id":"90e2cd7bcf420bf2","x":-300,"y":-320,"width":250,"height":60,"type":"text","text":"sticky"},
+		{"id":"860fa6bd5fea229a","x":156,"y":-379,"width":250,"height":89,"type":"text","text":"nel body per evitare problemi di sovrapposizioni"}
+	],
+	"edges":[
+		{"id":"e2b33c1d79ba8ef7","fromNode":"90e2cd7bcf420bf2","fromSide":"right","toNode":"860fa6bd5fea229a","toSide":"left"}
+	]
+}

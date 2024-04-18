@@ -1,0 +1,26 @@
+{
+	"nodes":[
+		{"id":"31a6c17c6f2780be","type":"text","text":"Richard Hannay","x":-680,"y":-240,"width":250,"height":60},
+		{"id":"def0cfe8256c3cff","type":"text","text":"Mister Memory","x":-320,"y":200,"width":250,"height":60},
+		{"id":"06cf066b653eaa9e","type":"text","text":"Annabella Smith","x":-360,"y":-420,"width":250,"height":60},
+		{"id":"d86a840227782422","type":"text","text":"London","x":-280,"y":560,"width":250,"height":60},
+		{"id":"68e131c3c59e64cd","type":"text","text":"I trentanove scalini","x":230,"y":-180,"width":250,"height":60},
+		{"id":"46e400141d57693d","type":"text","text":"segreto sulla costruzione di aerei","x":400,"y":40,"width":250,"height":60},
+		{"id":"953c81b67bd0ceb9","x":760,"y":-120,"width":250,"height":60,"type":"text","text":"manca una falange del dito mignolo"},
+		{"id":"dfe5eb8ef3fffcfb","x":885,"y":790,"width":250,"height":60,"type":"text","text":"muore"},
+		{"id":"45ce48b5fc731b28","type":"text","text":"esplosione","x":275,"y":760,"width":250,"height":60},
+		{"id":"c67fb5b288093090","x":25,"y":40,"width":250,"height":60,"type":"text","text":"sparo salve"},
+		{"id":"0d8a00ae2cb4cea5","type":"text","text":"agente segreto","x":105,"y":-390,"width":250,"height":60}
+	],
+	"edges":[
+		{"id":"848801f9d33a7c9b","fromNode":"31a6c17c6f2780be","fromSide":"bottom","toNode":"def0cfe8256c3cff","toSide":"top"},
+		{"id":"0af463c198086789","fromNode":"06cf066b653eaa9e","fromSide":"bottom","toNode":"def0cfe8256c3cff","toSide":"top"},
+		{"id":"a11872b68ccd5561","fromNode":"def0cfe8256c3cff","fromSide":"bottom","toNode":"d86a840227782422","toSide":"top"},
+		{"id":"4f309581f50eee56","fromNode":"def0cfe8256c3cff","fromSide":"right","toNode":"45ce48b5fc731b28","toSide":"left"},
+		{"id":"dce4cad27aeb8eaf","fromNode":"06cf066b653eaa9e","fromSide":"right","toNode":"0d8a00ae2cb4cea5","toSide":"left"},
+		{"id":"06f26397edf7bac2","fromNode":"0d8a00ae2cb4cea5","fromSide":"bottom","toNode":"68e131c3c59e64cd","toSide":"top"},
+		{"id":"e33939aeb750a2db","fromNode":"68e131c3c59e64cd","fromSide":"bottom","toNode":"46e400141d57693d","toSide":"top"},
+		{"id":"21c97271dcd985c7","fromNode":"06cf066b653eaa9e","fromSide":"bottom","toNode":"c67fb5b288093090","toSide":"top"},
+		{"id":"8844f91af5bc7454","fromNode":"68e131c3c59e64cd","fromSide":"right","toNode":"953c81b67bd0ceb9","toSide":"left"}
+	]
+}

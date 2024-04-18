@@ -1,0 +1,19 @@
+{
+	"nodes":[
+		{"id":"57494adde9fc1bcf","type":"text","text":"req GET","x":-336,"y":-437,"width":250,"height":60},
+		{"id":"5678455ad6c843f3","type":"text","text":"evento PUT","x":-276,"y":-281,"width":250,"height":60},
+		{"id":"0bab56a50ce32585","type":"text","text":"client","x":-425,"y":-154,"width":250,"height":60},
+		{"id":"b157dabfebab78fe","type":"text","text":"relay","x":-210,"y":-80,"width":250,"height":60},
+		{"id":"26a80526523287f4","type":"text","text":"initListeners()","x":-723,"y":220,"width":250,"height":60,"color":"2"},
+		{"id":"00e2fec8d6421850","type":"text","text":"wait events","x":-740,"y":400,"width":250,"height":60,"color":"3"},
+		{"id":"c50f334a27c03946","type":"text","text":"initSocket()","x":-723,"y":100,"width":250,"height":60,"color":"2"},
+		{"id":"9327022afc107263","x":-1040,"y":540,"width":250,"height":60,"color":"6","type":"text","text":"close"},
+		{"id":"b9b47142d7415055","type":"text","text":"closeSocket()","x":-1040,"y":640,"width":250,"height":60,"color":"2"},
+		{"id":"06ec9262df803512","type":"text","text":"sendMessage()","x":-740,"y":640,"width":250,"height":60,"color":"2"},
+		{"id":"5e0d7e149712c9e1","type":"text","text":"get","x":-740,"y":540,"width":250,"height":60,"color":"6"},
+		{"id":"5c2fde4f1503f7f7","type":"text","text":"error","x":-140,"y":540,"width":250,"height":60,"color":"6"},
+		{"id":"e78f0121b16f793d","type":"text","text":"close","x":160,"y":540,"width":250,"height":60,"color":"6"},
+		{"id":"671030a0ec3596b3","type":"text","text":"message","x":460,"y":540,"width":250,"height":60,"color":"6"}
+	],
+	"edges":[]
+}

@@ -1,0 +1,28 @@
+{
+	"nodes":[
+		{"id":"229c013ce593df0f","type":"text","text":"obsidian plugin","x":-407,"y":-540,"width":250,"height":60},
+		{"id":"04844ac29585ee25","type":"text","text":"execSync","x":328,"y":-603,"width":250,"height":60},
+		{"id":"45adba6b7437c049","type":"text","text":"child_process","x":-40,"y":-540,"width":250,"height":60},
+		{"id":"08cf74a338d2f7b4","type":"text","text":"spawn","x":328,"y":-480,"width":250,"height":60},
+		{"id":"0fbf2ea5ca32f8fc","type":"text","text":"distrubuzioine","x":632,"y":-1085,"width":250,"height":60},
+		{"id":"531d7b2f7506e19b","type":"text","text":"browser","x":680,"y":420,"width":250,"height":60},
+		{"id":"a0913c9c565ac081","type":"text","text":"sh","x":680,"y":-860,"width":250,"height":60},
+		{"id":"fa8afecf7b8f22fc","type":"text","text":"javascript","x":319,"y":287,"width":250,"height":60},
+		{"id":"2c00f47e3a7cac27","type":"text","text":"push con fork degli `md`","x":-483,"y":756,"width":250,"height":60},
+		{"id":"5fcef1433e7aabf3","type":"text","text":"push con `execSync` nel `plugin`","x":26,"y":758,"width":334,"height":60},
+		{"id":"f7f495c3f46ee4ad","type":"text","text":"# Rules\n- i file nella cartella di uno user come nel nostro caso, vanno editati solo dallo user\n- i link ai file in una cartella user vanno messi dallo user stesso","x":-753,"y":-1180,"width":393,"height":366},
+		{"id":"705a14be537b7576","type":"text","text":"node","x":-40,"y":-700,"width":250,"height":60},
+		{"id":"f41cb2bd714145f5","type":"text","text":"script bun","x":-220,"y":-360,"width":250,"height":60},
+		{"id":"ad501af7b7e3b00b","type":"text","text":"![[script execSync#^917653]]\n![[script execSync#^528e90]]","x":-133,"y":-160,"width":437,"height":240}
+	],
+	"edges":[
+		{"id":"bf70b89c09cbd6d1","fromNode":"f41cb2bd714145f5","fromSide":"bottom","toNode":"ad501af7b7e3b00b","toSide":"top"},
+		{"id":"ad3a9268baa7207c","fromNode":"229c013ce593df0f","fromSide":"bottom","toNode":"f41cb2bd714145f5","toSide":"top"},
+		{"id":"afb3d34e9bd86094","fromNode":"229c013ce593df0f","fromSide":"right","toNode":"45adba6b7437c049","toSide":"left"},
+		{"id":"e680eae6b9d5fb47","fromNode":"45adba6b7437c049","fromSide":"right","toNode":"04844ac29585ee25","toSide":"left"},
+		{"id":"01b451e54378eb02","fromNode":"45adba6b7437c049","fromSide":"right","toNode":"08cf74a338d2f7b4","toSide":"left"},
+		{"id":"b0f2b58d7c69aa9b","fromNode":"fa8afecf7b8f22fc","fromSide":"right","toNode":"531d7b2f7506e19b","toSide":"top"},
+		{"id":"abd08d630f9cbc01","fromNode":"45adba6b7437c049","fromSide":"top","toNode":"705a14be537b7576","toSide":"bottom"},
+		{"id":"76c2aef7b6f8222b","fromNode":"2c00f47e3a7cac27","fromSide":"right","toNode":"5fcef1433e7aabf3","toSide":"left"}
+	]
+}

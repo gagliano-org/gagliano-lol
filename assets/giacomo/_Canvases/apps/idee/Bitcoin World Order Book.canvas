@@ -1,0 +1,42 @@
+{
+	"nodes":[
+		{"id":"4f9a3e9fb395b36d","type":"text","text":"physical services","x":-540,"y":-420,"width":250,"height":60},
+		{"id":"c7707995fd22cf6a","type":"text","text":"digital services","x":-280,"y":-420,"width":250,"height":60},
+		{"id":"f704f1147cddfa72","type":"text","text":"gps localization","x":-20,"y":-420,"width":250,"height":60},
+		{"id":"6d3a165b1c986884","type":"text","text":"customizable feed","x":240,"y":-420,"width":250,"height":60},
+		{"id":"8ae9f375acab0e9a","type":"text","text":"goods tracking","x":140,"y":-340,"width":250,"height":60},
+		{"id":"7301c71b97451d03","type":"text","text":"digital goods","x":-145,"y":-340,"width":250,"height":60},
+		{"id":"4c8d3ad54124e146","type":"text","text":"physical goods","x":-440,"y":-340,"width":250,"height":60},
+		{"id":"b020d5c230f472da","type":"text","text":"ai route identifier","x":-235,"y":-185,"width":250,"height":60},
+		{"id":"3109363920164169","type":"text","text":"ai product identifier","x":-235,"y":-80,"width":250,"height":60},
+		{"id":"2ef3f29bedd62ae2","type":"text","text":"ai intermidiary identifier","x":-235,"y":20,"width":250,"height":60},
+		{"id":"8fe4d52ca3aa8ba1","type":"text","text":"good","x":-600,"y":-110,"width":250,"height":60},
+		{"id":"3c244962beaf8d0f","type":"text","text":"btc","x":140,"y":-110,"width":250,"height":60},
+		{"id":"c3a60d6c4ab806d9","type":"text","text":"order book","x":-235,"y":160,"width":250,"height":60},
+		{"id":"e6155bf2dda0d775","type":"text","text":"limit buy","x":-360,"y":340,"width":250,"height":60},
+		{"id":"ead57919800be918","type":"text","text":"automatic market making","x":-360,"y":420,"width":250,"height":60},
+		{"id":"b2ba1a5f03da09f2","type":"text","text":"limit sale","x":-360,"y":260,"width":250,"height":60},
+		{"id":"8b126a4ff8b22328","type":"text","text":"market sale","x":-40,"y":260,"width":250,"height":60},
+		{"id":"96869c7f5f0fcf75","type":"text","text":"market buy","x":-40,"y":340,"width":250,"height":60},
+		{"id":"41616bddf9a6d224","type":"text","text":"seller","x":-850,"y":760,"width":250,"height":60},
+		{"id":"94cc128709c7b6a2","type":"text","text":"demand filter configuaration","x":-685,"y":654,"width":325,"height":60},
+		{"id":"ce95eebd79ce72ef","type":"text","text":"buyer","x":390,"y":760,"width":250,"height":60},
+		{"id":"50a8fb28d3bacd77","type":"text","text":"offer filter configuaration","x":140,"y":654,"width":325,"height":60},
+		{"id":"4d50f89280ce8eef","type":"text","text":"trade history","x":-360,"y":1000,"width":250,"height":60},
+		{"id":"5c078b29455625ff","type":"text","text":"feed back","x":-80,"y":1000,"width":250,"height":60},
+		{"id":"542c34a19bf2774b","type":"text","text":"reputation","x":-235,"y":760,"width":250,"height":60},
+		{"id":"9943e4cfe2b7849d","x":-372,"y":1180,"width":457,"height":430,"type":"text","text":"**REPUTATION FREE TOKEN**\n\nEvery user has a daily amount of reputation token that he can send to sellers, this token is called FREE, they can be sent only once, and they get wiped out daily, it is a form of evaluation of what a good actually means for the user.\n\n  \n\nIt represents the utility of things that the user purchases, therefor providing an insight for the product and for the seller\n\n  \n\na user also has reputation token that he receives from the seller as evaluation of the transaction"},
+		{"id":"4685fff5093207b0","x":-559,"y":1743,"width":299,"height":257,"type":"text","text":"# **no leverage**\n\nto make the exchange a safe place, we will prevent the tools which facilitate the creation of market bubbles, like leverage"},
+		{"id":"a2f52bbf174ab41b","x":248,"y":1567,"width":250,"height":60,"type":"text","text":"dubbio"},
+		{"id":"204b8cfdf9553b12","x":-58,"y":1792,"width":286,"height":160,"type":"text","text":"# **no otc**\n\nfor the freedom of people every transaction shall be transparent"},
+		{"id":"b6fa15519fb9cdf3","x":-2,"y":2040,"width":345,"height":200,"type":"text","text":"# **no speculation**\n\nthis market is meant to provide everyone the free choice of choosing what to by and at which cost, speculation will be discouraged"},
+		{"id":"19c521e3a934147f","x":-640,"y":2100,"width":313,"height":280,"type":"text","text":"# **no loans**\n\nloans have been historically the cause of great theft and crisis, there for this system will not allow loans, instead a new form of inclusion will be used"}
+	],
+	"edges":[
+		{"id":"178bb0422a86333f","fromNode":"542c34a19bf2774b","fromSide":"bottom","toNode":"5c078b29455625ff","toSide":"top"},
+		{"id":"ba51b79a2a796abd","fromNode":"542c34a19bf2774b","fromSide":"bottom","toNode":"4d50f89280ce8eef","toSide":"top"},
+		{"id":"2fb5d1041bac394b","fromNode":"ce95eebd79ce72ef","fromSide":"left","toNode":"542c34a19bf2774b","toSide":"right"},
+		{"id":"48fc8b6c7a647d5b","fromNode":"41616bddf9a6d224","fromSide":"right","toNode":"542c34a19bf2774b","toSide":"left"},
+		{"id":"897a02b06e9fac6a","fromNode":"204b8cfdf9553b12","fromSide":"top","toNode":"a2f52bbf174ab41b","toSide":"bottom"}
+	]
+}

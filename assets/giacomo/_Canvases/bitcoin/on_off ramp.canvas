@@ -1,0 +1,8 @@
+{
+	"nodes":[
+		{"id":"4b6bb38dce3f7d75","type":"text","text":"giftcards","x":-138,"y":80,"width":250,"height":60},
+		{"id":"f837a195276509fd","x":-240,"y":-460,"width":250,"height":60,"type":"text","text":"cards"},
+		{"id":"b34dfa26133f6f43","x":-600,"y":-240,"width":250,"height":60,"type":"text","text":"lightning"}
+	],
+	"edges":[]
+}

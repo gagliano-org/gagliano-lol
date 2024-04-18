@@ -1,0 +1,23 @@
+{
+	"nodes":[
+		{"id":"2c1ee7e309866edb","x":-235,"y":-527,"width":250,"height":60,"type":"text","text":"massimo comun divisore"},
+		{"id":"bba5b76cc7f8c2dd","x":-135,"y":-342,"width":250,"height":60,"type":"text","text":"è pari?"},
+		{"id":"7a562661ef499054","x":280,"y":-342,"width":250,"height":60,"type":"text","text":"dividi per 2"},
+		{"id":"0a177d01605e3710","x":-135,"y":-205,"width":250,"height":60,"type":"text","text":"dividi per il numero primo più piccolo"},
+		{"id":"c3d9ef309a66b58c","x":-135,"y":-80,"width":250,"height":60,"type":"text","text":"è intero?"},
+		{"id":"59e13bd2cf6ade1f","x":-135,"y":60,"width":250,"height":60,"type":"text","text":"è sbagliato"},
+		{"id":"6958c36840626456","x":220,"y":-75,"width":250,"height":50,"type":"text","text":"è giusto"},
+		{"id":"8933dc6781637eb1","x":860,"y":-205,"width":250,"height":60,"type":"text","text":"aggiungo il fattore, e ripeto con il risultato"}
+	],
+	"edges":[
+		{"id":"8177567a72c1cf3d","fromNode":"bba5b76cc7f8c2dd","fromSide":"right","toNode":"7a562661ef499054","toSide":"left"},
+		{"id":"c448b9785e8ef014","fromNode":"bba5b76cc7f8c2dd","fromSide":"bottom","toNode":"0a177d01605e3710","toSide":"top"},
+		{"id":"b79cdb75b1bec9d8","fromNode":"0a177d01605e3710","fromSide":"bottom","toNode":"c3d9ef309a66b58c","toSide":"top"},
+		{"id":"736a8cf60964321c","fromNode":"c3d9ef309a66b58c","fromSide":"right","toNode":"6958c36840626456","toSide":"left"},
+		{"id":"a8bd28f97c03a054","fromNode":"c3d9ef309a66b58c","fromSide":"bottom","toNode":"59e13bd2cf6ade1f","toSide":"top"},
+		{"id":"b977a4e8d79e6d8c","fromNode":"6958c36840626456","fromSide":"right","toNode":"8933dc6781637eb1","toSide":"left"},
+		{"id":"dc0ed09a818413c5","fromNode":"7a562661ef499054","fromSide":"right","toNode":"8933dc6781637eb1","toSide":"left"},
+		{"id":"27fbf51d6dfb8778","fromNode":"8933dc6781637eb1","fromSide":"right","toNode":"bba5b76cc7f8c2dd","toSide":"top"},
+		{"id":"2b6796fabfb0a93d","fromNode":"8933dc6781637eb1","fromSide":"right","toNode":"0a177d01605e3710","toSide":"top"}
+	]
+}
