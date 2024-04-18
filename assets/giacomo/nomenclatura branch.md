@@ -1,0 +1,4 @@
+- nelle app
+- nei pacchetti
+- nelle app locali
+- nel monorepo

@@ -18,6 +18,9 @@ created_at: 14-04-24 12:10
 - [ ] [[spesa 14_04_24]]
 - [ ] [[folder per le rules]]
 - [ ] [[convertire i kanban]]
+- [ ] [[;repo nel repo|fare articolo su come gestire il repo nel repo]]
+- [ ] [[nomenclatura branch|definire delle rules per la nomenclature dei branch]]
+- [ ] creare una cartella checkboxes per creare dei workflow come per esemprio quello che ho fatto per sistemare il problema del repo nel repo (nel monorepo i cambiamenti vengono visualizzati come un unico file)
 
 
 ## wip
