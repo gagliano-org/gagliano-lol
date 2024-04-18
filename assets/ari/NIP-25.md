@@ -1,0 +1,54 @@
+
+# NIP-25
+
+## Reazioni
+
+Una reazione è una nota `kind 7` che viene utilizzata per reagire ad altre note.
+
+La reazione generica, rappresentata dal campo `content` impostato su una stringa `+`, DEVE essere interpretata come un "mi piace" o "upvote".
+
+Una reazione con il campo `content` impostato su `-` DEVE essere interpretata come un "non mi piace" o "downvote". NON DOVREBBE essere conteggiata come un "mi piace" e PUÒ essere visualizzata come un downvote o un "non mi piace" su un post. Un client PUÒ anche scegliere di conteggiare i "mi piace" contro i "non mi piace" in un sistema simile a Reddit di upvote e downvote, o mostrarli come conteggi separati.
+
+Il campo `content` PUÒ essere un emoji o un emoji personalizzato [NIP-30], in questo caso PUÒ essere interpretato come un "mi piace" o "non mi piace", oppure il client PUÒ mostrare questa reazione emoji nel post. Se il campo `content` è una stringa vuota, allora il client dovrebbe considerarlo come un "+".
+
+## Tag
+
+L'evento di reazione DEVE includere i tag `e` e `p` dalla nota a cui l'utente sta reagendo. Questo permette agli utenti di essere notificati delle reazioni ai post in cui sono stati menzionati. Includere i tag `e` permette ai client di recuperare tutte le reazioni associate a singoli post o a tutti i post in un thread.
+
+L'ultimo tag `e` DEVE essere l'`id` della nota a cui si sta reagendo.
+
+L'ultimo tag `p` DEVE essere la `pubkey` dell'evento a cui si sta reagendo.
+
+## Codice di esempio
+
+```swift
+func make_like_event(pubkey: String, privkey: String, liked: NostrEvent) -> NostrEvent {
+    var tags: [[String]] = liked.tags.filter { 
+    	tag in tag.count >= 2 && (tag[0] == "e" || tag[0] == "p") 
+    }
+    tags.append(["e", liked.id])
+    tags.append(["p", liked.pubkey])
+    let ev = NostrEvent(content: "+", pubkey: pubkey, kind: 7, tags: tags)
+    ev.calculate_id()
+    ev.sign(privkey: privkey)
+    return ev
+}
+```
+
+## Reazione con Emoji Personalizzato
+
+Il client può specificare un emoji personalizzato [NIP-30] `:shortcode:` nel campo contenuto della reazione. Il client dovrebbe fare riferimento al tag dell'emoji e rendere il contenuto come un emoji se il shortcode è specificato.
+
+```json
+{
+  "kind": 7,
+  "content": ":soapbox:",
+  "tags": [
+    ["emoji", "soapbox", "https://gleasonator.com/emoji/Gleasonator/soapbox.png"]
+  ],
+  "pubkey": "79c2cae114ea28a981e7559b4fe7854a473521a8d22a66bbab9fa248eb820ff6",
+  "created_at": 1682790000
+}
+```
+
+Il campo contenuto può contenere solo un `:shortcode:`. E il tag dell'emoji dovrebbe essere uno.

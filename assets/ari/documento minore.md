@@ -1,0 +1,1 @@
+![[Dichiarazione+minore compilata.pdf]]

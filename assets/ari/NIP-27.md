@@ -1,0 +1,52 @@
+# NIP-27
+
+## Riferimenti a Note di Testo
+
+Questo documento standardizza il trattamento dato dai client ai riferimenti in linea ad altri eventi e profili all'interno del campo `.content` di qualsiasi evento che abbia testo leggibile nel suo campo `.content` (come i tipi 1 e 30023).
+
+Quando si crea un evento, i client dovrebbero includere menzioni ad altri profili e ad altri eventi nel mezzo del campo `.content` utilizzando i codici [NIP-21](21.md), come ad esempio `nostr:nprofile1qqsw3dy8cpu...6x2argwghx6egsqstvg`.
+
+L'inclusione di tag in stile [NIP-10](10.md) (`["e", <hex-id>, <relay-url>, <marker>]`) per ogni riferimento è facoltativa, i client dovrebbero farlo ogni volta che desiderano che il profilo menzionato venga notificato della menzione, o quando desiderano che l'evento di riferimento riconosca la loro menzione come una risposta.
+
+Un client lettore che riceve un evento con menzioni `nostr:...` nel suo campo `.content` può fare qualsiasi tipo di arricchimento del contesto desiderato (ad esempio, collegarsi al profilo o mostrare una anteprima del contenuto dell'evento menzionato) nel processo. Se si trasformano tali menzioni in collegamenti, potrebbero diventare collegamenti interni, collegamenti [NIP-21](21.md) o collegamenti diretti a client web che gestiranno questi riferimenti.
+
+---
+
+## Esempio di processo di menzione di un profilo
+
+Supponiamo che Bob stia scrivendo una nota in un client che ha una funzionalità di ricerca e autocompletamento per gli utenti che viene attivata quando scrivono il carattere `@`.
+
+Mentre Bob digita `"ciao @mat"` il client gli chiederà di completare con il profilo di [mattn](https://gateway.nostr.com/p/2c7cc62a697ea3a7826521f3fd34f0cb273693cbe5e9310f35449f43622a5cdc), mostrando una foto e un nome.
+
+Bob preme "invio" e ora vede la sua nota digitata come `"ciao @mattn"`, `@mattn` è evidenziato, indicando che è una menzione. Internamente, tuttavia, l'evento appare così:
+
+```json
+{
+  "content": "ciao nostr:nprofile1qqszclxx9f5haga8sfjjrulaxncvkfekj097t6f3pu65f86rvg49ehqj6f9dh",
+  "created_at": 1679790774,
+  "id": "f39e9b451a73d62abc5016cffdd294b1a904e2f34536a208874fe5e22bbd47cf",
+  "kind": 1,
+  "pubkey": "79be667ef9dcbbac55a06295ce870b07029bfcdb2dce28d959f2815b16f81798",
+  "sig": "f8c8bab1b90cc3d2ae1ad999e6af8af449ad8bb4edf64807386493163e29162b5852a796a8f474d6b1001cddbaac0de4392838574f5366f03cc94cf5dfb43f4d",
+  "tags": [
+    [
+      "p",
+      "2c7cc62a697ea3a7826521f3fd34f0cb273693cbe5e9310f35449f43622a5cdc"
+    ]
+  ]
+}
+```
+
+(In alternativa, la menzione avrebbe potuto essere un URL `nostr:npub1...`.)
+
+Dopo che Bob pubblica questo evento e Carol lo vede, il suo client visualizzerà inizialmente il campo `.content` così com'è, ma successivamente analizzerà il campo `.content` e vedrà che c'è un URL `nostr:` al suo interno, lo decodificherà, estrarrà la chiave pubblica da esso (e eventualmente suggerimenti per i relay), recupererà quel profilo dal suo database interno o dai relay, quindi sostituirà l'URL completo con il nome `@mattn`, con un collegamento alla visualizzazione della pagina interna per quel profilo.
+
+## Considerazioni prolisse e probabilmente superflue
+
+- L'esempio sopra è stato molto concreto, ma ciò non significa che tutti i client debbano implementare lo stesso flusso. Potrebbero esserci client che non supportano affatto l'autocompletamento, quindi consentono agli utenti di incollare codici [NIP-19](19.md) grezzi nel corpo del testo, quindi li precedono con `nostr:` prima di pubblicare l'evento.
+- Il flusso per fare riferimento ad altri eventi è simile: un utente potrebbe incollare un codice `note1...` o `nevent1...` e il client lo trasformerà in un URL `nostr:note1...` o `nostr:nevent1...`. Quindi, durante la lettura di tali riferimenti, il client potrebbe mostrare la nota di riferimento in una casella di anteprima o qualcosa del genere, o nulla affatto.
+- Possono essere impiegate altre procedure di visualizzazione: ad esempio, se un client progettato per gestire solo note di testo di `kind:1` vede, ad esempio, un riferimento URL `nostr:naddr1...` di [`kind:30023`](23.md) nel campo `.content`, può decidere, ad esempio, di trasformarlo in un collegamento a un'app Web codificata duramente in grado di visualizzare tali eventi.
+- I client possono dare all'utente la possibilità di includere o meno i tag per gli eventi o i profili menzionati. Se qualcuno vuole menzionare `mattn` senza notificarlo, ma vuole comunque avere un bel collegamento arricchibile/cliccabile al suo profilo all'interno della propria nota, può istruire il proprio client a _non_ creare un tag `["p", ...]` per quella specifica menzione.
+- Allo stesso modo, se qualcuno vuole fare rifer
+
+imento a un'altra nota ma il suo riferimento non è destinato a comparire insieme ad altre risposte a quella stessa nota, il suo client può scegliere di non includere un tag corrispondente `["e", ...]` per un qualsiasi URL `nostr:nevent1...` all'interno di `.content`. I client possono decidere se esporre queste funzionalità avanzate agli utenti o essere più categorici riguardo alle cose.
