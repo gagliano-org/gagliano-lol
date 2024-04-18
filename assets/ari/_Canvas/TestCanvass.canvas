@@ -1,0 +1,7 @@
+{
+	"nodes":[
+		{"id":"53c884564c8e97b7","type":"file","file":"manifest.md","x":-155,"y":-382,"width":243,"height":142},
+		{"id":"1d851bee332d73ef","type":"link","url":"https://developer.mozilla.org/en-US/docs/Web/Manifest","x":180,"y":-240,"width":454,"height":500}
+	],
+	"edges":[]
+}

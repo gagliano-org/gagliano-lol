@@ -1,0 +1,15 @@
+{
+	"nodes":[
+		{"id":"acf1cfc009ed8fb1","type":"link","url":"https://medium.com/@rocchokcoco/css-glitch-art-effect-17362d669a5f","x":-164,"y":36,"width":400,"height":400},
+		{"id":"663acf10e24a7a53","type":"link","url":"https://animate.style/","x":-463,"y":-440,"width":299,"height":180},
+		{"id":"8e80d0f5aa090dba","type":"link","url":"https://codepen.io/Chokcoco/pen/OJPexEm","x":146,"y":520,"width":400,"height":400},
+		{"id":"701c1bf32118a121","type":"link","url":"https://webcode.tools/generators/css/keyframe-animation","x":-1400,"y":-40,"width":520,"height":400},
+		{"id":"ecf652a9c21aff4b","type":"link","url":"https://css-tricks.com/books/greatest-css-tricks/scroll-animation/","x":146,"y":-350,"width":310,"height":180}
+	],
+	"edges":[
+		{"id":"f0a93460fb0eafa7","fromNode":"701c1bf32118a121","fromSide":"right","toNode":"ecf652a9c21aff4b","toSide":"left"},
+		{"id":"9aad81df1343acac","fromNode":"701c1bf32118a121","fromSide":"right","toNode":"acf1cfc009ed8fb1","toSide":"left"},
+		{"id":"f0b42050e30af240","fromNode":"acf1cfc009ed8fb1","fromSide":"bottom","toNode":"8e80d0f5aa090dba","toSide":"top"},
+		{"id":"2e65450fae4688d3","fromNode":"701c1bf32118a121","fromSide":"right","toNode":"663acf10e24a7a53","toSide":"left"}
+	]
+}
