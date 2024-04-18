@@ -1,0 +1,4 @@
+---
+nome: pattern
+parent: "[[💾dati]]"
+---

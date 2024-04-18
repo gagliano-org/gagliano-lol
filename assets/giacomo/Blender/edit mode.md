@@ -1,0 +1,1 @@
+[mirror](https://www.youtube.com/shorts/UbAYXVXbM-w)

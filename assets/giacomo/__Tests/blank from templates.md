@@ -1,0 +1,5 @@
+---
+type: "[[vynil]]"
+parents:
+  - "[[🧰Obsidian]]"
+---

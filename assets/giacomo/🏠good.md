@@ -1,0 +1,4 @@
+---
+nome: good
+parent: "[[⚙️quality]]"
+---

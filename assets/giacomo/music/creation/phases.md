@@ -1,0 +1,5 @@
+[[music/creation/phases/concept]]
+[[music/creation/phases/composition]]
+[[music/creation/phases/arrangement]]
+[[music/creation/phases/production]]                   
+[[music/creation/phases/distribution]]

@@ -1,0 +1,1 @@
+Definisce l'iniezione di [[nostr/nips/nip07/window.nostr]]

@@ -1,0 +1,8 @@
+- togli vaschetta
+- appoggia foglio sul piano
+- svitare le viti della piastra
+- tool>manual>🏠 torna su tool e dai set zero
+- riporta su la piastra
+- rimettere vaschetta
+- carichi il file
+- fai partire la stampa

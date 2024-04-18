@@ -1,0 +1,1 @@
+Il tag `expiration` consente agli utenti di specificare un timestamp Unix a cui il messaggio DEVE essere considerato scaduto (da relays e client) e DEVE essere eliminato dai relays.

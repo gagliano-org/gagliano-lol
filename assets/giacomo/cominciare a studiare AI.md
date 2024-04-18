@@ -1,0 +1,4 @@
+- [ ] cercare se esistono dei gpt apposta per fare traduzioni e controllare costi
+- [ ] provare ad usare l'api gratis per tradurre
+- [ ] cercare nei plug di obsidian
+- [ ] 

@@ -1,0 +1,1 @@
+convertire le note che prima erano kanban in una nota di classe `task`

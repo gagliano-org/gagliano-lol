@@ -1,0 +1,3 @@
+- [[togliere bucato da lavatrice]]
+- [[mettere bucato sporto in lavatrice]]
+- [[togliere il bucato dallo stendino]]

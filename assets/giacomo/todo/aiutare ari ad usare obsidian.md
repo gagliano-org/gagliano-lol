@@ -1,0 +1,6 @@
+- [x] installare plugin
+- [x] impostare shortcuts
+- [x] impostare cartella templates
+- [x] creare un wiki link
+- [x] creare una kanban board
+- [x] creare dei todo/tasks

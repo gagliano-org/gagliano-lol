@@ -1,0 +1,1 @@
+Definisce un metodo per [[key from mnemonic]]

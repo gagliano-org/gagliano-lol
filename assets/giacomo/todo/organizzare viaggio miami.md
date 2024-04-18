@@ -1,0 +1,35 @@
+- [ ] controllare documenti necessari
+	- [x] fare ESTA
+	- [ ] assicurazione sanitaria
+- [x] scegliere periodo
+	- [x] `[[23/4, 11/6], [25/6, 13/9]]`
+	- [ ] `[[29/4, 11/6], [25/6, 13/9]]`
+	- [ ] `[[29/4, 21/6], [4/7, 28/9]]`
+- [x] comprare volo
+- [ ] comprare vestiti
+	- [ ] tshirt
+	- [ ] pantaloncini
+	- [ ] mutande
+	- [ ] calze
+- [ ] comprare medicinali
+	- [ ] zirtek
+- [ ] comprare cibo
+	- [ ] spaghetti
+	- [ ] olio
+- [ ] comprare valigia
+- [ ] [[chiedere a Ryan]]
+	- [ ] macchina del caffè
+	- [ ] come posso spostarmi a Miami
+	- [ ] se c'è equipaggiamento mix
+	- [ ] se devo portare lo schermo
+	- [ ] a che ora sono i booking
+	- [ ] costo di una giornata di studio
+	- [ ] se posso usare studio B per fare corsi
+- [ ] preparare valigia
+	- [ ] vestiti
+	- [ ] toilette
+		- [ ] medicine
+			- [ ] zirtek
+	- [ ] cibo
+	- [ ] tech
+- [ ] fare checklist per il viaggio

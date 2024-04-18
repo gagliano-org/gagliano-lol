@@ -1,0 +1,1 @@
+> come faccio a proiettare una curva su una mesh?

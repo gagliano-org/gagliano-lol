@@ -1,0 +1,1 @@
+[UV coloring technique](https://www.youtube.com/watch?v=1jHUY3qoBu8)
